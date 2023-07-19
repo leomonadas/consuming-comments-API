@@ -1,0 +1,24 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 15px;
+}
+.hide{
+    display: none;
+}
+a, input[type="submit"]{
+    background-color: rgb(188, 130, 243);
+    color: #FFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0.7;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+a:hover,
+input[type="submit"]{
+    opacity: 1;
+}
