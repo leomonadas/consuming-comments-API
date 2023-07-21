@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <p id="loading">Carregando...</p>
     <div id="post" class="hide">
-        <a href="index.html">voltar</a>
+        <a href="index.html">Voltar</a>
         <div id="posts-container"></div>
-        <h2>comentários:</h2>
+        <h2>Comentários:</h2>
         <form id="comment-form">
             <div>
                 <label for="email">Seu e-mail:</label>
@@ -19,7 +20,7 @@
             </div>
             <div>
                 <label for="body">Seu comentário:</label>
-                <input type="body" name="body" id="body" placeholder="Digite o seu comentário" required>
+                <textarea type="body" name="body" id="body" placeholder="Digite o seu comentário" required></textarea>
             </div>
             <input type="submit" value="Enviar" />
         </form>
