@@ -11,6 +11,7 @@ const commentscontainer = document.querySelector("#comments-container");
 
 // Get forms dat
 const commentForm = document.querySelector("#comment-form");
+const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const bodyInput = document.querySelector("#body");
 
@@ -58,8 +59,6 @@ async function getPost(id) {
     const dataPost = await responsePost.json();
     const dataComments = await responseComments.json();
 
-    console.log(dataComments)
-
     loadingElement.classList.add("hide");
     postPage.classList.remove("hide");
 
@@ -106,7 +105,6 @@ async function postComment(comment) {
     });
 
     const data = await response.json();
-
     createComment(data);
 }
 
@@ -120,6 +118,7 @@ if (!postId) {
         e.preventDefault();
 
         let comment = {
+            name: nameInput.value,
             email: emailInput.value,
             body: bodyInput.value,
         };
